@@ -1,0 +1,23 @@
+{
+  "name": "task_manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeRiyal/task_manager.git"
+  },
+  "author": "Riyal Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeRiyal/task_manager/issues"
+  },
+  "homepage": "https://github.com/BeRiyal/task_manager#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
