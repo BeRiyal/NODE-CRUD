@@ -1,1 +1,0 @@
-const connectionString = 'mongodb+srv://iamriyalpatel7112:<password>@cluster0.i3f5bv3.mongodb.net/'
