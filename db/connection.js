@@ -1,8 +1,6 @@
 const mongooes = require("mongoose") 
 
-const dbUri = 'mongodb+srv://riyalp99:Riyal1999@cluster0.2x02rzy.mongodb.net/CRUD?retryWrites=true&w=majority';
-
-const connectDB = () =>{
+const connectDB = (dbUri) =>{
     return mongooes.connect(dbUri,{
       useNewUrlParser:true,
       useCreateIndex:true,
