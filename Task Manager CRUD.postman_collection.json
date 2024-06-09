@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "5ff5c91f-73d9-4638-b7c8-6fa713f6229c",
+		"name": "Task Manager CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16849697"
+	},
+	"item": [
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"hello\",\r\n    \"completed\":true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tasks",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/tasks",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/tasks/fakeid",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tasks",
+						"fakeid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task By",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/tasks/fakeid",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tasks",
+						"fakeid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Riyal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/tasks/6664e6f9b2cff51ea489b55",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tasks",
+						"6664e6f9b2cff51ea489b55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/tasks/delete_id",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"tasks",
+						"delete_id"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
